@@ -7,7 +7,7 @@ app.use(express.json()); // GitHub sends application/json
 
 app.get("/",(req,res)=>{
   console.log("Thanks for sending request...")
-  return res.json({message:"checking...."})
+  return res.json({message:"checking."})
 })
 
 app.listen(PORT, () => {
