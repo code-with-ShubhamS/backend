@@ -10,6 +10,11 @@ app.get("/",(req,res)=>{
   return res.json({message:"checking...."})
 })
 
+app.get("/health",(req,res)=>{
+  return res.status(200).json({message:"health is all good"})
+})
+
+
 app.listen(PORT, () => {
   console.log(`Webhook server listening on port ${PORT}`);
 });
